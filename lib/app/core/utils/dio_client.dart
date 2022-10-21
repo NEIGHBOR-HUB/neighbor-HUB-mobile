@@ -2,6 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:neighbor_hub/app/core/errors/token_expired_or_invalid.dart';
+import 'package:neighbor_hub/app/core/stores/auth_store.dart';
 
 abstract class HttpClient {
   Future<Response> post({@required String route, Map<String, dynamic> data = const {}});
